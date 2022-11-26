@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 using Amazon.Lambda.Core;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
@@ -10,6 +5,21 @@ using Amazon.Lambda.Core;
 
 namespace Lambda.Demo
 {
+    /*
+    
+    Install dotnet amazon lambda tools
+    C:\Users\Moham>dotnet tool install -g Amazon.Lambda.Tools
+
+    Install Amazon Lambda Function Template Projects
+    dotnet new --install Amazon.Lambda.Templates::5.2.0
+
+    Create New Lambda Function application
+    dotnet new lambda.EmptyFunction --name Lambda.Demo
+
+    Deploy Lambda Function to Aws
+    dotnet lambda deploy-function LambdaDemo
+
+    */
     public class Function
     {
         
